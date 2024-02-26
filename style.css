@@ -4,12 +4,13 @@ body {
 
 a img:hover {
     transform: scale(1.1);
-    cursor: url("./images/scalpel.png") 30 30, pointer;
+    cursor: url("./images/scalpel.png") 30 30, auto;
   
   }
 
 .container {
     display: grid;
+    overflow: none;
     grid-template-rows: repeat(5, 19.6vh);
     grid-template-columns: repeat(20, 5%);
     width:100%;
@@ -22,6 +23,13 @@ a img:hover {
     grid-area: 1 /1 /6 /17;
 }
 
+.mainbox2 {
+    background-size: cover;
+    grid-area: 1 /3 /6 /21;
+    margin-left: 0%;
+    align-items: right;
+}
+
 .textbox {
     /* border: 1px solid rgb(255, 255, 255); */
     color:rgb(255, 255, 255) ; 
@@ -31,6 +39,61 @@ a img:hover {
     z-index: 1;
     grid-area: 3 /14 /4 /17;
 }
+
+.textbox3 {
+    /* border: 1px solid rgb(255, 255, 255); */
+    color:rgb(255, 255, 255) ; 
+    font-size: 16px;
+    margin-top: 60px;
+    text-align: center;
+    z-index: 1;
+    grid-area: 1 /18 /5 /20;
+}
+
+.textbox5 {
+    /* border: 1px solid rgb(255, 255, 255); */
+    color:rgb(255, 255, 255) ; 
+    font-size: 16px;
+    margin-top: 60px;
+    text-align: center;
+    z-index: 1;
+    grid-area: 1 /13 /3 /19;
+}
+
+.textbox2 {
+    /* border: 1px solid rgb(255, 255, 255); */
+    color:rgb(255, 255, 255) ; 
+    font-size: 16px;
+    margin-top: 155px;
+    margin-left:10%;
+    z-index: 1;
+    grid-area: 2 /2 /3 /5;
+}
+
+.textbox6 {
+    /* border: 1px solid rgb(255, 255, 255); */
+    color:rgb(255, 255, 255) ; 
+    font-size: 16px;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    margin-left:10%;
+    z-index: 1;
+    text-align: right;
+    grid-area: 2 /16 /3 /20;
+}
+
+.textbox4 {
+    /* border: 1px solid rgb(255, 255, 255); */
+    color:rgb(255, 255, 255) ; 
+    font-size: 16px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    margin-left:0%;
+    z-index: 1;
+    text-align: left;
+    grid-area: 1 /2 /2 /5;
+}
+
 
   /* 
     1.grid-row-start
@@ -68,76 +131,152 @@ a img:hover {
     grid-area: 4 /17 /5 /21;
 }
 
-/* body {
-    background-color: rgb(0, 0, 0); 
-    overflow: hidden;
-}
-
-p {
-    color:rgb(255, 255, 255) ; 
-    font-size: 15px;
-    font-style: normal;
-    margin-left: 40px;
-    }
-
-
-.element {
-    text-align: center;
-    padding-top: 30px;
-}
-
-.content {
-    height: 120vh;
+.icon-skeletal-1 {
    
+    z-index: 1;
+    align-items: left;
+    background-size: cover;
+    margin-top:-50%;
+    grid-area: 4 /2 /5 /4;
+    
 }
 
-.main-container {
-    display: flex;
-    width: auto;
-    flex-flow: row;
-} */
-
-/* .circulatory {
-    background-color: rgb(0, 0, 0);
-    background-image: url("circulatory-system2.png");
-    background-size: 1000px 1400px;
-    background-repeat: no-repeat;
-    margin-left:150px;
-    margin-right:10;
-    margin-top:-100px;
-    width: 900px;
+.icon-skeletal-2 {
+   
+    z-index: 1;
+    align-items: left;
+    background-size: cover;
+    margin-top: -50%;
+    grid-area: 2 /2 /3 /4; 
 }
 
-.skeletal {
-    background-color: rgb(0, 0, 0);
-    margin-left:150px;
-    margin-right:10;
-    margin-top:-100px;
-    width: 900px; 
-} */
-/* 
-
-.content-2 {
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    margin-top: 20%;
-    width: 15%;
-}
-  
-.content-3 {
-    background-color: rgb(0, 0, 0);
-    width: 25%;
+.icon-skeletal-3 {
+   
+    z-index: 1;
+    align-items: left;
+    background-size: cover;
+    margin-top:-10%;
+    grid-area: 4 /4 /5 /8; 
 }
 
-.divider-1 {
-    background-color: rgb(0, 0, 0);
-    width: 2%;
+.icon-nervous-1 {
+   
+    z-index: 1;
+    background-size: cover;
+    grid-area: 5 /13 /6 /14;
+    margin-top: -80%;
+     /* border: 1px solid white; */
+}
+.icon-nervous-2 {
+   
+    z-index: 1;
+    background-size: cover;
+    grid-area: 5 /15 /6 /16;
+    margin-top: -80%;
+    margin-left: 50%;
+     /* border: 1px solid white; */
+}
+.icon-nervous-3 {
+   
+    z-index: 1;
+    background-size: cover;
+    grid-area: 5 /18 /6 /19;
+    margin-top: -90%;
+    margin-right: 50%;
+     /* border: 1px solid white; */
+}
+   
+.icon-muscular-1 {
+   
+    z-index: 1;
+    align-items: left;
+    background-size: cover;
+    grid-area: 1 /9 /2 /12;
+    margin-top: 180px;
+    /* border: 1px solid white; */
+
+}
+.icon-muscular-2 {
+   
+    z-index: 1;
+    align-items: left;
+    background-size: cover;
+    
+    grid-area: 3 /9 /4 /12;
+    margin-top: 5px;
+    /* border: 1px solid white; */
+
+}
+.icon-muscular-3 {
+   
+    z-index: 1;
+    align-items: left;
+    background-size: cover;
+    grid-area: 4 /9 /5 /12;
+    margin-top: 10%;
+    /* border: 1px solid white; */
+
 }
 
-.divider-2 {
-    background-color: rgb(0, 0, 0);
-    width: 3%;
-}
- */
+.icon-respiratory-1 {
+   
+    z-index: 1;
+    align-items: left;
+    background-size: cover;
+    grid-area: 1 /16 /2 /17;
+    margin-top: 65px;
+    margin-left: -40%
+    
+    /* border: 1px solid white; */
 
-/* _______________________________________________________________________________________________________________ */
+}
+.icon-respiratory-2 {
+   
+    z-index: 1;
+    align-items: left;
+    background-size: cover;
+    grid-area: 1 /1 /2 /2;
+    margin-top: 50px;
+    margin-left: 40%
+    /* border: 1px solid white; */
+
+}
+.icon-respiratory-3 {
+   
+    z-index: 1;
+    align-items: left;
+    background-size: cover;
+    grid-area: 1 /18 /2 /19;
+    margin-top: 60px;
+    margin-left: 40%
+}
+
+.icon-digestive-1 {
+   
+    z-index: 1;
+    align-items: left;
+    background-size: cover;
+    grid-area: 2 /2 /3 /3;
+    margin-top: 90px;
+    margin-left: -30%
+}
+
+.icon-digestive-2 {
+   
+    z-index: 1;
+    align-items: left;
+    background-size: cover;
+    grid-area: 3 /2 /4 /3;
+    margin-top: 120px;
+    margin-left: -30%
+}
+
+.icon-digestive-3 {
+   
+    z-index: 1;
+    align-items: left;
+    background-size: cover;
+    grid-area: 4 /2 /5 /3;
+    margin-top: 120px;
+    margin-left: -50%
+}
